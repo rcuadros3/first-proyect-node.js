@@ -17,13 +17,13 @@ const options = {
     }
   }
 }
-app.use(cors());
+app.use(cors(options));
 
-app.get("/", (req, res) => {
+app.get("/api", (req, res) => {
   res.send("Hello! I'm your new e-commerce :D");
 });
 
-app.get("/new-rute", (req,res) => {
+app.get("/api/new-rute", (req,res) => {
   res.send("Hello, I'm a new rute");
 });
 
